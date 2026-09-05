@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rockstar Games</title>
+    <link rel="icon" href="imagens/rockstar.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .produtos {
+            display: flex;
+            gap: 20px;
+        }
+
+        .produto {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .produto img {
+            width: 200px;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .preco {
+            color: #0b7a3e;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: Georgia, serif;
+        }
+
+        article {
+            border-radius: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rockstar Games Store</h1>
+        <p>Os melhores jogos da Rockstar Games <em>para você!</em></p>
+    </header>
+
+    <nav>
+        <a href="#produtos">Produtos</a> |
+        <a href="#cadastro">Cadastrar produto</a>
+    </nav>
+
+    <main>
+
+        <section id="produtos">
+
+            <h2>Produtos</h2>
+
+            <div class="produtos">
+
+                <article class="produto">
+                    <img src="imagens/gtavi.jpg" alt="GTA VI">
+
+                    <h3>Grand Theft Auto VI</h3>
+
+                    <p class="preco"> R$ 549,90</p>
+
+                    <a href="https://www.rockstargames.com/VI" target="_blank">
+                        Ver detalhes
+                    </a>
+                </article>
+
+
+                <article class="produto">
+                    <img src="imagens/redead2.png" alt="Red Dead Redemption 2">
+
+                    <h3>Red Dead Redemption 2</h3>
+
+                    <p class="preco">R$ 299,90</p>
+
+                    <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank">
+                        Ver detalhes
+                    </a>
+                </article>
+
+
+                <article class="produto">
+                    <img src="imagens/gtav.png" alt="GTA V">
+
+                    <h3>Grand Theft Auto V</h3>
+
+                    <p class="preco">R$ 149,90</p>
+
+                    <a href="https://www.rockstargames.com/gta-v" target="_blank">
+                        Ver detalhes
+                    </a>
+                </article>
+
+
+                <article class="produto">
+                    <img src="imagens/gtasa.png" alt="GTA San Andreas">
+
+                    <h3>Grand Theft Auto: San Andreas</h3>
+
+                    <p class="preco">R$ 99,90</p>
+
+                    <a href="https://www.rockstargames.com/games/sanandreas" target="_blank">
+                        Ver detalhes
+                    </a>
+                </article>
+
+
+                <article class="produto">
+                    <img src="imagens/gtaiv.jpg" alt="GTA IV">
+
+                    <h3>Grand Theft Auto IV</h3>
+
+                    <p class="preco">R$ 119,90</p>
+
+                    <a href="https://www.rockstargames.com/games/IV" target="_blank">
+                        Ver detalhes
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="cadastro">
+
+            <h2>Cadastrar Novo Produto</h2>
+
+            <form>
+                <label for="nome">Nome do produto:</label>
+                <input type="text" id="nome">
+
+                <label for="preco">Preço:</label>
+                <input type="text" id="preco">
+
+                <label for="imagem">Imagem:</label>
+                <input type="text" id="imagem">
+
+                <label for="link">Link para detalhes:</label>
+                <input type="url" id="link">
+
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Minha loja da Rockstar Games | Desenvolvido por Thulio</p>
+    </footer>
+
+</body>
+
+</html>

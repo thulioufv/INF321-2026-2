@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UFT-8">
+    <title> INF 213 | Estrutura de Dados </title>
+    <link rel="icon" href="imagens/favicon.png">
+    <style>
+        /* Alterando fonte da página */
+        body {
+            font-family: "Trebuchet MS", Arial, sans-serif;
+        }
+
+
+        /* Tamanho e bordas de imagem */
+        .foto {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+        }
+
+        /**/
+        th, td {
+            border: 1px solid #ccc;
+            padding: 15px;
+            text-align: center;
+            height: 60px;
+            width: 80px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>INF 213 | Estrutura de Dados</h1>
+        <a href="https://www2.dpi.ufv.br/" target="_blank">
+            <img src="https://www2.dpi.ufv.br/wp-content/uploads/2022/07/3_o.png" alt="Logo do Departamento de Informática">
+        </a>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#professores">Professores</a>
+        <a href="#horarios">Horários</a>
+        <a href="#matricula">Matrícula</a>
+    </nav>
+
+    <main>
+        <section id="sobre">            
+            <h2>Sobre a disciplina</h2>
+            <p>A disciplina de estrutura de dados introduz conceitos de métodos de ordenação, complexidade de algoritmos
+                e, principalmente, estruturas de dados famosas em C++, tais como:</p>
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/cpp/cpp_vectors.asp">Vector</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/cpp/cpp_list.asp">List</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/cpp/cpp_queues.asp">Queue</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/cpp/cpp_stacks.asp">Stack</a>
+                </li>
+                <li>
+                    <a href="https://en.cppreference.com/cpp/container/priority_queue">Heap (priority queue)</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/cpp/cpp_sets.asp">Set</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/cpp/cpp_maps.asp">Map</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/dsa/dsa_theory_hashtables.php">Hash Table</a>
+                </li>
+            </ul>
+        </section>
+        <section id="professores">
+            <h2>Professores responsáveis</h2>
+            <img class="foto" src="imagens/salles_2025.jpg" alt="Foto do professor Salles">
+            <h3>Salles Viana Gomes de Magalhães</h3>
+            <em>Professor Adjunto</em>
+
+            <p>
+                <strong>Doutor</strong>, Rensselaer Polytechnic Institute, 2017 <br>
+                <strong>Mestre</strong> em Ciência da Computação, UFV, 2010 <br>
+                <strong>Bacharel</strong> em Ciência da Computação, UFV, 2008
+            </p>
+
+            <img class="foto" src="imagens/thiago-luange.png" alt="Foto do professor Thiago">
+            <h3>Thiago Luange Gomes</h3>
+            <em>Professor</em>
+
+            <p>
+                <strong>Doutor</strong> em Ciência da Computação, UFMG, 2021 <br>
+                <strong>Mestre</strong> em Ciência da Computação, UFV, 2013 <br>
+                <strong>Bacharel</strong> em Ciência da Computação, UFV, 2011
+            </p>
+        </section>
+
+        <section id="horarios">
+            <h2> Horários de Aula</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>08:00 - 09:40</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Aula Teórica</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>10:00 - 11:40</th>
+                        <td>Aula Teórica</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>14:00 - 15:40</th>
+                        <td></td>
+                        <td></td>
+                        <td>Aula Prática<br>(Turma 1)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>16:00 - 17:40</th>
+                        <td></td>
+                        <td></td>
+                        <td>Aula Prática<br>(Turma 2)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="matricula">
+            <h2>Faça a sua matrícula na disciplina: </h2>
+            <form method="post">
+                <label>Nome:</label>
+                <input type="text" name="nome">
+
+                <label>Matrícula:</label>
+                <input type="text" name="matricula">
+                
+                <label>Email institucional:</label>
+                <input type="email" name="email">
+                
+                <label for="periodo">Período:</label>
+                <select id="periodo" name="periodo">
+                    <option value="2">2º Período</option>
+                    <option value="4">4º Período</option>
+                    <option value="6">6º Período</option>
+                    <option value="8">8º Período</option>
+                </select>
+                
+                <button>Realizar matrícula</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Desenvolvido por Thulio</p>
+    </footer>
+
+</body>
+
+</html>
